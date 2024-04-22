@@ -1,10 +1,14 @@
 const puppeteer = require("puppeteer");
 
+const url = "https://www.mercadolivre.com.br/";
+
+const searchFor = "notebook";
+
 (async () => {
     const browser = await puppeteer.launch({headless: false});
     const page = await browser.newPage();
-    await page.goto("https://www.google.com.br/?hl=pt-BR");
-    await page.screenshot({path: "google.png"})
-
-    await browser.close()
+    console.log("Estou funcionando");
+    await page.goto(url);
+    console.log("entrei na url");
+    await browser.close();
 })();

@@ -1,14 +1,24 @@
 const app = Vue.createApp({
-    template: '<h1>Olá, {{name}}</h1><button v-on:click="increaseCount">Contador: {{count}}</button>',
     data(){
         return{
-            name: 'Michelly',
-            count: 0
+            name: 'Fulano de tal',
+            login: 'aleat',
+            bio: '...',
+            company: 'Acme Inc.',
+            avatar_url: 'https://unsplash.it/256',
+            searchInput: ''
         }
     },
     methods:{
-        increaseCount(){
-            this.count++
+        async fetchGithubUser(){
+            const res = await fetch(`https://api.github.com/users/${this.searchInput}`)
+            const { login, name, bio, company, avatar_url } = await res.json()
+
+            this.login = login
+            this.name = name
+            this.bio = bio 
+            this.company = company
+            this.avatar_url = avatar_url
         }
     }
 })

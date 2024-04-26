@@ -16,7 +16,7 @@ const app = Vue.createApp({
 
             this.login = login
             this.name = name
-            this.bio = bio 
+            this.bio = bio
             this.company = company
             this.avatar_url = avatar_url
         }

@@ -14,8 +14,9 @@ const searchFor = "notebook";
     await page.type("#cb1-edit", searchFor);
     await Promise.all([page.waitForNavigation(), page.click(".nav-search-btn")]);
 
-    const links = await page.$$eval(".ui-search-result__image > a", (e1) =>
-    e1.map((link) => link.href));
+    const links = await page.$$eval(".ui-search-item__group--title > a", (e1) => e1.map((link) => link.href));
     console.log(links);
     await browser.close();
 })();
+
+// minuto 11:00 video 6

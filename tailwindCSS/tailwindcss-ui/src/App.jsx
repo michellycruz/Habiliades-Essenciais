@@ -4,7 +4,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="h-screen bg-zinc-800 text-zinc-100">
+    <div className="h-screen bg-zinc-100 text dark:bg-zinc-800 dark:text-zinc-50 grid place-content-center">
       <h1 className='text-3xl text-center'>Ready to start with Taildwind!</h1>
       <button 
         className='

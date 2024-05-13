@@ -1,4 +1,5 @@
 import Logo from "./Logo"
+import Avatar from "./Avatar"
 
 export default function Header(){
     return(
@@ -11,9 +12,8 @@ export default function Header(){
             "
         >
             <Logo />
-            <div>logo</div>
             <div>pesquisa</div>
-            <div>avatar</div>
+            <Avatar />
         </header>
     )
 }

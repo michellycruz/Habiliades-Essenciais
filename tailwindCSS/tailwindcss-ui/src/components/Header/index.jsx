@@ -1,5 +1,6 @@
 import Logo from "./Logo"
 import Avatar from "./Avatar"
+import SearchForm from "./SearchForm"
 
 export default function Header(){
     return(
@@ -12,7 +13,7 @@ export default function Header(){
             "
         >
             <Logo />
-            <div>pesquisa</div>
+            <SearchForm />
             <Avatar />
         </header>
     )

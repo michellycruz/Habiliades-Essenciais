@@ -1,4 +1,5 @@
-export default function Container(){
+// eslint-disable-next-line react/prop-types
+export default function Container({ children }){
     return (
         <div
             className="
@@ -8,7 +9,7 @@ export default function Container(){
                 h-[calc(100vh_-_4rem)] lg:h-[calc(100vh_-_5rem)]
             "
         >
-
+            {children}
         </div>
     )
 }

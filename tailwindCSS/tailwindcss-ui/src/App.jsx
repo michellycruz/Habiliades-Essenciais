@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Header from './components/Header'
+import Container from './components/Container'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -7,7 +8,7 @@ function App() {
   return (
     <>
       <Header />
-      <div className="h-screen bg-zinc-100 text dark:bg-zinc-800 dark:text-zinc-50 grid place-content-center">
+      <Container>
         <h1 className='text-3xl text-center'>Ready to start with Tailwind!</h1>
         <button 
           className='
@@ -18,7 +19,7 @@ function App() {
           onClick={() => setCount(count => count + 1)}>
           count is {count}
         </button>
-      </div>
+      </Container>
     </>
   )
 }

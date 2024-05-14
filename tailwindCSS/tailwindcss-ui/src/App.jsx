@@ -10,7 +10,7 @@ function App() {
     <>
       <Header />
       <Container>
-        <div className='flex flex-col md:flex-row gap-2 xl:gap-4 '>
+        <div className='flex flex-col md:flex-row gap-2 xl:gap-4 '> 
           <Sidebar />
           <h1 className='text-3xl text-center'>Ready to start with Tailwind!</h1>
           <button 

@@ -13,7 +13,7 @@ function App() {
       <Container>
         <div className='flex flex-col md:flex-row gap-2 xl:gap-4 h-full relative'> 
           <Sidebar />
-          <div>
+          <div className='h-full'>
             <h1 className='text-3xl text-center'>Ready to start with Tailwind!</h1>
             <button
               className='

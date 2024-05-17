@@ -1,4 +1,6 @@
 /* eslint-disable react/prop-types */
+import Avatar from "./Avatar"
+
 export default function EmailListItem({ email, onClick }){
     return(
         <article
@@ -8,8 +10,8 @@ export default function EmailListItem({ email, onClick }){
                 rounded-lg transition-colors"
             onClick={onClick}
         >
-            {/* img */}
-            <div>
+            <Avatar letter={email.from[0].toUpperCase()} />
+            <div className="grow shrink basis-40">
                 <strong>{email.subject}</strong>
                 <p>{email.body.length > 64 ? email.body.slice(0, 64) + '...' : email.body}</p>
             </div>

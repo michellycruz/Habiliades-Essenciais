@@ -18,4 +18,3 @@ export default {
 }
 }
 
-// terminei a aula 6, vou começar a aula 7 agora

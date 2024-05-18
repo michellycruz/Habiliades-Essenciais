@@ -60,4 +60,4 @@ const Bottombar = () => {
 
 export default Bottombar
 
-//parei no minuto 4:29 da aula 7
+//terminei a aula 8, vou começar a 9

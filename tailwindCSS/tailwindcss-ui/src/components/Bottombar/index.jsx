@@ -59,5 +59,3 @@ const Bottombar = () => {
 }
 
 export default Bottombar
-
-//terminei a aula 8, vou começar a 9

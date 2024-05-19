@@ -13,8 +13,8 @@ export default {
         primary: colors.emerald
       }
   },
-  plugins: [],
-  darkMode: "class"
-}
+  },
+plugins: [],
+darkMode: 'class'
 }
 

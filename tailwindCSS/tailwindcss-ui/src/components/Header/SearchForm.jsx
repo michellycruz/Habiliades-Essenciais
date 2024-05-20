@@ -22,7 +22,6 @@ export default function SearchForm(){
                     bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-gray-50
                     focus:outline-none focus:border-primary-400 focus:text-primary-400 hover:border-primary-400 hover:text-primary-400 transition-colors
                 "
-            
             >
                 <FiSearch />
             </button>
